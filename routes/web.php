@@ -28,3 +28,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/subscribe', 'SubscriptionsController@store');
 
 });
+
+Route::resource('/admin/users','AdminUsersController');
